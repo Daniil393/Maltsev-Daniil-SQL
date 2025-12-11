@@ -93,6 +93,13 @@ insert into subscription_view (...)
 + в books добавлена книга;
 + в subscription добавлена запись, содержащая полученные внешние ключи.
 
+```java
+Тестовые запросы:
+select * from readers;
+select * from books;
+select * from subscription;
+```
+
 Вывод подтверждает корректность всех трёх вставок.
 
 ### *5.2. UPDATE*
