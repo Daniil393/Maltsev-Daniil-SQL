@@ -84,7 +84,9 @@
 Вставка новой записи через представление:
 
 ```java
-insert into subscription_view (...)
+insert into subscription_view (last_name, first_name, patronymic, address, author, title, pub_year, deposit, issue_date, return_date)
+values ('Иванов', 'Тимофей', 'Кириллович', 'Москва', 'Лев Толстой', 'Война и мир', 1869, 500,
+ '2025-12-22', null);
 ```
 
 Результат:
@@ -93,13 +95,9 @@ insert into subscription_view (...)
 + в books добавлена книга;
 + в subscription добавлена запись, содержащая полученные внешние ключи.
 
-Тестовые запросы:
-
-```java
-select * from readers;
-select * from books;
-select * from subscription;
-```
+<img width="869" height="58" alt="image" src="https://github.com/user-attachments/assets/9285a191-dab0-4bae-b1b8-bd6583dcaa82" />
+<img width="988" height="59" alt="image" src="https://github.com/user-attachments/assets/5699e99b-588a-4c7e-89c9-dd34c63503f7" />
+<img width="987" height="60" alt="image" src="https://github.com/user-attachments/assets/a4be4c2c-7e66-404b-b5a7-87c3cd8f29a3" />
 
 Вывод подтверждает корректность всех трёх вставок.
 
