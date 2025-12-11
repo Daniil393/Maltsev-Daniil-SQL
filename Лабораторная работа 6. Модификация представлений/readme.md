@@ -95,8 +95,14 @@ values ('Иванов', 'Тимофей', 'Кириллович', 'Москва'
 + в books добавлена книга;
 + в subscription добавлена запись, содержащая полученные внешние ключи.
 
+*Таблица books* :
+
 <img width="869" height="58" alt="image" src="https://github.com/user-attachments/assets/9285a191-dab0-4bae-b1b8-bd6583dcaa82" />
+
+*Таблица readers* :
 <img width="988" height="59" alt="image" src="https://github.com/user-attachments/assets/5699e99b-588a-4c7e-89c9-dd34c63503f7" />
+
+*Таблица subscription* :
 <img width="987" height="60" alt="image" src="https://github.com/user-attachments/assets/a4be4c2c-7e66-404b-b5a7-87c3cd8f29a3" />
 
 Вывод подтверждает корректность всех трёх вставок.
