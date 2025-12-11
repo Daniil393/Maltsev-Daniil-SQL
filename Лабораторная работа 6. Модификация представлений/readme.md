@@ -95,6 +95,13 @@ values ('Иванов', 'Тимофей', 'Кириллович', 'Москва'
 + в books добавлена книга;
 + в subscription добавлена запись, содержащая полученные внешние ключи.
 
+Проверка:
+```java
+select * from readers;
+select * from books;
+select * from subscription;
+```
+
 *Таблица books* :
 
 <img width="869" height="58" alt="image" src="https://github.com/user-attachments/assets/9285a191-dab0-4bae-b1b8-bd6583dcaa82" />
@@ -113,9 +120,7 @@ values ('Иванов', 'Тимофей', 'Кириллович', 'Москва'
 ### *5.2. UPDATE*
 
 ```java
-update subscription_view
-set return_date = '2025-12-25'
-where last_name = 'Иванов' and title = 'Война и мир';
+update subscription_view set return_date = '2025-12-25' where last_name = 'Иванов' and title = 'Война и мир';
 ```
 
 В таблице subscription обновлено только поле return_date.
@@ -125,6 +130,16 @@ where last_name = 'Иванов' and title = 'Война и мир';
 ```java
 select * from subscription;
 ```
+
+*Таблица books* :
+
+<img width="870" height="58" alt="image" src="https://github.com/user-attachments/assets/1d74c8a6-0c07-41f1-9219-bd6e5ac85194" />
+
+*Таблица readers* :
+
+<img width="987" height="60" alt="image" src="https://github.com/user-attachments/assets/ec825d10-e5cb-4703-843b-064ab554de5b" />
+
+*Таблица subscription* :
 
 Результат корректен.
 
