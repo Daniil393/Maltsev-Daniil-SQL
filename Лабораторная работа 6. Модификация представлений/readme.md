@@ -147,10 +147,26 @@ select * from subscription;
 
 ### *5.3. DELETE*
 ```java
-delete from subscription_view
-where last_name = 'Иванов' and title = 'Война и мир';
+delete from subscription_view where last_name = 'Иванов' and title = 'Война и мир';
 ```
+
+Проверка:
+```java
+select * from subscription;
+```
+
+*Таблица subscription* :
+
+<img width="975" height="62" alt="image" src="https://github.com/user-attachments/assets/4724fe80-def3-40ce-9f3c-e00da71337cb" />
 
 Из таблицы-связки удалена соответствующая запись.
 
-Связанные читатель и книга корректно не удаляются, что соответствует нормальной логике M:N связи.
+Связанные читатель и книга не удаляются, что соответствует нормальной логике M:N связи:
+
+*Таблица books* :
+
+<img width="870" height="59" alt="image" src="https://github.com/user-attachments/assets/0ed33297-5df1-4198-af56-41cef184baf4" />
+
+*Таблица readers* :
+
+<img width="986" height="54" alt="image" src="https://github.com/user-attachments/assets/7e428c68-4190-4275-94fd-b772e236c97f" />
