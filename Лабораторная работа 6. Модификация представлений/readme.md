@@ -107,6 +107,7 @@ values ('Иванов', 'Тимофей', 'Кириллович', 'Москва'
 
 <img width="987" height="60" alt="image" src="https://github.com/user-attachments/assets/a4be4c2c-7e66-404b-b5a7-87c3cd8f29a3" />
 
+
 Вывод подтверждает корректность всех трёх вставок.
 
 ### *5.2. UPDATE*
