@@ -40,7 +40,7 @@
 
 Все триггерные функции корректно возвращают NULL, что соответствует требованиям PostgreSQL для представлений без собственных строк хранения.
 
-*4.1. Триггер INSERT*
+### *4.1. Триггер INSERT*
 
 Функция:
 
@@ -79,7 +79,7 @@
 
 ### *5. Тестирование*
 
-*5.1. INSERT*
+### *5.1. INSERT*
 
 Вставка новой записи через представление:
 
@@ -95,7 +95,7 @@ insert into subscription_view (...)
 
 Вывод подтверждает корректность всех трёх вставок.
 
-5.2. UPDATE
+### *5.2. UPDATE*
 
 ```java
 update subscription_view
@@ -111,7 +111,7 @@ where last_name = 'Иванов' and title = 'Война и мир';
 select * from subscription;
 ```
 
-5.3. DELETE
+### *5.3. DELETE*
 ```java
 delete from subscription_view
 where last_name = 'Иванов' and title = 'Война и мир';
