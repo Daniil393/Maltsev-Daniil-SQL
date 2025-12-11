@@ -96,7 +96,6 @@ values ('Иванов', 'Тимофей', 'Кириллович', 'Москва'
 + в subscription добавлена запись, содержащая полученные внешние ключи.
 
 *Таблица books* :
-
 <img width="869" height="58" alt="image" src="https://github.com/user-attachments/assets/9285a191-dab0-4bae-b1b8-bd6583dcaa82" />
 
 *Таблица readers* :
