@@ -141,6 +141,8 @@ select * from subscription;
 
 *Таблица subscription* :
 
+<img width="988" height="61" alt="image" src="https://github.com/user-attachments/assets/12a158e5-7d69-4c97-8ece-adb51bc08a0a" />
+
 Результат корректен.
 
 ### *5.3. DELETE*
