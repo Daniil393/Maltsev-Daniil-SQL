@@ -119,6 +119,8 @@ where last_name = 'Иванов' and title = 'Война и мир';
 select * from subscription;
 ```
 
+Результат корректен.
+
 ### *5.3. DELETE*
 ```java
 delete from subscription_view
