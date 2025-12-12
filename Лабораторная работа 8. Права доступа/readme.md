@@ -1,4 +1,4 @@
-### Таблица cms.articles с учётом Row-Level Security (RLS)
+## Таблица cms.articles с учётом Row-Level Security (RLS)
 
 |Role|SELECT|INSERT|UPDATE|DELETE|RLS ограничения|
 |:---------|:--------:|:---------:|:---------:|:--------:|:--------:|
@@ -8,7 +8,7 @@
 |reporting_user|✔️ (только опубликованные + ограниченные столбцы)|❌|❌|❌|is_published = true|
 
 
-### Таблица cms.comments с учётом RLS
+## Таблица cms.comments с учётом RLS
 
 |Role|SELECT|INSERT|UPDATE|DELETE|RLS ограничения|
 |:---------|:--------:|:---------:|:---------:|:--------:|:--------:|
