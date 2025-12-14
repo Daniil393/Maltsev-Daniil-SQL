@@ -83,7 +83,7 @@
 
 Вставка новой записи через представление:
 
-```java
+```SQL
 insert into subscription_view (last_name, first_name, patronymic, address, author, title, pub_year, deposit, issue_date, return_date)
 values ('Иванов', 'Тимофей', 'Кириллович', 'Москва', 'Лев Толстой', 'Война и мир', 1869, 500,
  '2025-12-22', null);
@@ -96,7 +96,7 @@ values ('Иванов', 'Тимофей', 'Кириллович', 'Москва'
 + в subscription добавлена запись, содержащая полученные внешние ключи.
 
 Проверка:
-```java
+```SQL
 select * from readers;
 select * from books;
 select * from subscription;
@@ -119,7 +119,7 @@ select * from subscription;
 
 ### *5.2. UPDATE*
 
-```java
+```SQL
 update subscription_view set return_date = '2025-12-25' where last_name = 'Иванов' and title = 'Война и мир';
 ```
 
@@ -127,7 +127,7 @@ update subscription_view set return_date = '2025-12-25' where last_name = 'Ив�
 Ключевые поля не затронуты.
 
 Проверка:
-```java
+```SQL
 select * from subscription;
 ```
 
@@ -146,12 +146,12 @@ select * from subscription;
 Результат корректен.
 
 ### *5.3. DELETE*
-```java
+```SQL
 delete from subscription_view where last_name = 'Иванов' and title = 'Война и мир';
 ```
 
 Проверка:
-```java
+```SQL
 select * from subscription;
 ```
 
