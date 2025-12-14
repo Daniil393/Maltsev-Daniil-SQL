@@ -156,25 +156,3 @@ insert into cms.articles(author_id, title, content, is_published) values
 insert into cms.comments(article_id, user_id, text) values
 (1, 3, 'Great article!'),
 (3, 2, 'Needs some edits');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
