@@ -108,7 +108,7 @@ grant usage on schema cms to app_user;
 
 Для таблиц articles и comments включена политика RLS.
 
-## Таблица cms.articles с учётом Row-Level Security (RLS)
+### Таблица cms.articles с учётом Row-Level Security (RLS)
 
 |Role|SELECT|INSERT|UPDATE|DELETE|RLS ограничения|
 |:---------|:--------:|:---------:|:---------:|:--------:|:--------:|
@@ -117,7 +117,7 @@ grant usage on schema cms to app_user;
 |viewer|✔️ (только опубликованные)|❌|❌|❌|is_published = true|
 |reporting_user|✔️ (только опубликованные + ограниченные столбцы)|❌|❌|❌|is_published = true|
 
-## Таблица cms.comments с учётом RLS
+### Таблица cms.comments с учётом RLS
 
 |Role|SELECT|INSERT|UPDATE|DELETE|RLS ограничения|
 |:---------|:--------:|:---------:|:---------:|:--------:|:--------:|
@@ -126,7 +126,7 @@ grant usage on schema cms to app_user;
 |viewer|✔️|❌|❌|❌|видеть все строки|
 |reporting_user|✔️ (ограниченные столбцы)|❌|❌|❌|видеть все строки|
 
-## Таблица cms.users, RLS - отсутствует
+### Таблица cms.users, RLS - отсутствует
 
 |Role|SELECT|INSERT|UPDATE|DELETE|
 |:---------|:--------:|:---------:|:---------:|:--------:|
